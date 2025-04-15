@@ -65,10 +65,6 @@ The CNN model is designed to extract spatial features from skin lesion images. T
 The trained model achieved **training accuracy between 90% and 94%**, showing its capability in classifying different types of skin lesions effectively.  
 The **Adam optimizer** and CNN-based feature extraction contributed to the high accuracy and reliable performance of the system.
 
-Below is the confusion matrix showing classification performance:
 
-![Confusion Matrix](confusion_matrix.PNG)
-
-The matrix reveals strong classification across all categories, with very few misclassifications.
 
 
