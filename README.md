@@ -1,44 +1,74 @@
-# Skin Cancer Classification Using CNN
-#Introduction
+#  Skin Cancer Classification Using CNN
 
-Skin cancer is one of the most common forms of cancer worldwide. Early detection plays a crucial role in increasing survival rates and improving treatment effectiveness. This project leverages Convolutional Neural Networks (CNNs) to develop a deep learning-based system that classifies skin conditions and assists in early diagnosis.
+##  Introduction
+Skin cancer is one of the most common forms of cancer worldwide. Early detection plays a crucial role in increasing survival rates and improving treatment effectiveness.  
+This project leverages **Convolutional Neural Networks (CNNs)** to build a deep learning-based system that classifies skin conditions and assists in early diagnosis.
 
-#Dataset
+---
 
-The project utilizes the International Skin Imaging Collaboration (ISIC) dataset, a widely recognized dataset containing labeled images of different skin conditions. The key classes include:
-Melanoma 
-Dermatofibroma 
-Nevus Pigmentosus 
-Squamous Cell Carcinoma 
+##  Dataset
+The project uses the **International Skin Imaging Collaboration (ISIC)** dataset, which contains labeled images of different skin conditions.  
+Key classes include:
 
-##Technologies Used
+- **Melanoma**  
+- **Dermatofibroma**  
+- **Nevus Pigmentosus**  
+- **Squamous Cell Carcinoma**  
+- **Healthy Skin**
 
-Programming Language: Python
-Deep Learning Framework: TensorFlow / Keras
-Computer Vision: OpenCV
-Data Processing: Pandas, NumPy, Matplotlib
+---
 
-##Model Architecture
+##  Technologies Used
+- **Programming Language:** Python  
+- **Deep Learning Framework:** TensorFlow / Keras  
+- **Computer Vision:** OpenCV  
+- **Data Processing & Visualization:** Pandas, NumPy, Matplotlib  
 
+---
+
+##  Model Architecture
 The CNN model is designed to extract spatial features from skin lesion images. The architecture includes:
-Convolutional Layers – To capture local patterns and textures.
-Pooling Layers – To reduce dimensionality and computational complexity.
-Fully Connected Layers – To perform classification.
-Activation Functions – ReLU for feature extraction and Softmax for multi-class classification.
 
-##Implementation Steps
+- **Convolutional Layers:** To capture local patterns and textures  
+- **Pooling Layers:** To reduce dimensionality and computation  
+- **Fully Connected Layers:** For classification  
+- **Activation Functions:**  
+  - `ReLU` for non-linearity  
+  - `Softmax` for multi-class classification  
 
-Data Preprocessing:Image resizing and normalization.
-Data augmentation to enhance model generalization.
-Building the CNN Model
-Constructing layers using Keras and TensorFlow.
-Using dropout layers to prevent overfitting.
+---
 
-##Model Training & Evaluation
+##  Implementation Steps
 
-Training the model with labeled skin lesion images.
-Evaluating accuracy, precision, recall, and F1-score.
+### 1. Data Preprocessing
+- Image resizing and normalization  
+- Data augmentation to enhance generalization  
 
-##Results & Performance
+### 2. Building the CNN Model
+- Layers constructed using TensorFlow/Keras  
+- Dropout layers added to reduce overfitting  
 
-The trained model achieved high accuracy in classifying skin conditions, demonstrating its potential for assisting dermatologists in diagnosis. Performance metrics such as precision, recall, and F1-score were used to evaluate the model.
+---
+
+##  Model Training & Evaluation
+- Training the model with labeled skin lesion images  
+- Evaluating model performance using:
+  - **Accuracy**
+  - **Precision**
+  - **Recall**
+  - **F1-Score**
+
+---
+
+##  Results & Performance
+
+The trained model achieved **training accuracy between 90% and 94%**, showing its capability in classifying different types of skin lesions effectively.  
+The **Adam optimizer** and CNN-based feature extraction contributed to the high accuracy and reliable performance of the system.
+
+Below is the confusion matrix showing classification performance:
+
+![Confusion Matrix](confusion_matrix.png)
+
+The matrix reveals strong classification across all categories, with very few misclassifications.
+
+
