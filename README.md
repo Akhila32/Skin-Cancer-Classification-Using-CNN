@@ -67,7 +67,7 @@ The **Adam optimizer** and CNN-based feature extraction contributed to the high 
 
 Below is the confusion matrix showing classification performance:
 
-![Confusion Matrix](confusion_matrix.png)
+![Confusion Matrix](confusion_matrix.PNG)
 
 The matrix reveals strong classification across all categories, with very few misclassifications.
 
